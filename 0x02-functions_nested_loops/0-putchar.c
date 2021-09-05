@@ -10,14 +10,10 @@
  */
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+char *msg = "_putchar\n";
+
+while (*msg != '\0');
+_putchar(*msg++);
+  
 return (0);
 }
