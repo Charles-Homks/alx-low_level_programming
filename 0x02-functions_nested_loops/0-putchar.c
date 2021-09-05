@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - code entry point
@@ -12,7 +11,7 @@ int main(void)
 {
 char *msg = "_putchar\n";
 
-while (*msg != '\0');
+while (*msg != '\0')
 _putchar(*msg++);
   
 return (0);
