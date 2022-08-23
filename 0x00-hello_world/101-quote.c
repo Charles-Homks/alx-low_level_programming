@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char Dora[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	size_t size = sizeof(Dora);
+	char DK[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	size_t size = sizeof(DK);
 
-	write(1, Dora, size);
+	write(1, DK, size);
 
 	return (1);
 }
