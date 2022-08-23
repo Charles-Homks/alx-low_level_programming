@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char Dora[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char Dora[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	size_t size = sizeof(Dora);
 
 	write(1, Dora, size);
