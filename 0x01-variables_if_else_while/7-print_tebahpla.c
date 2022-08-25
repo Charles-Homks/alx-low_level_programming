@@ -8,6 +8,7 @@
 int main(void)
 {
 	char alpha;
+
 	alpha = 'z';
 
 	while (alpha >= 'a')
@@ -15,12 +16,6 @@ int main(void)
 		putchar(alpha);
 		alpha--;
 	}
-
-	/* Using the for function:
-	for (alpha = 'z'; alpha >= 'a'; alpha--)
-	{
-		putchar(alpha);
-	} */
 	putchar('\n');
 	return (0);
 }
