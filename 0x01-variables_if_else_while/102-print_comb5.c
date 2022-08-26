@@ -2,64 +2,39 @@
 
 /**
  * main - Program prints all possible different combinations of
- *	two digits numbers
+ *	two two-digits numbers
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int i = '0', j;
+	int a, b;
+	int y, z;
 
-	while (i <= '9')
+	for (a = '0'; a <= '9'; a++)
 	{
-		j = '0';
-		while (j <= '9')
+		for (b = '0'; b <= '9'; b++)
 		{
-			if (j > i)
+			for (y = '0'; y <= '9'; y++)
 			{
-				putchar(i);
-				putchar(j);
-				if (i != '8' || j != '9')
+				for (z = '0'; z <= '9'; z++)
 				{
-				putchar(',');
-				putchar(' ');
-				}
-			}
-			j++;
-		}
-		i++;
-	}
-	putchar('\n');
-	return (0);
-}
-#include <stdio.h>
-
-/**
- * main - Program prints all possible different combinations of
- *	three digits numbers
- *
- * Return: Always 0
- */
-int main(void)
-{
-	int m, n, o;
-
-	for (m = '0'; m <= '9'; m++)
-	{
-		for (n = '0'; n <= '9'; n++)
-		{
-			for (o = '0'; o <= '9'; o++)
-			{
-				if (n > m && o > n)
+				if (a != y || b != z)
 				{
-					putchar(m);
-					putchar(n);
-					putchar(o);
-					if (m != '7' || n != '8' || o != '9')
+				if (y > b)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(y);
+					putchar(z);
+					if (a != '9' || b != '8' || y != '9' || z != '9')
 					{
 					putchar(',');
 					putchar(' ');
 					}
+				}
+				}
 				}
 			}
 		}
