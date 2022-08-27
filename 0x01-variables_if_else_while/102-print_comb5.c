@@ -21,7 +21,7 @@ int main(void)
 				{
 				if (a != y || b != z)
 				{
-				if (y > b)
+				if (y > b || z > a)
 				{
 					putchar(a);
 					putchar(b);
