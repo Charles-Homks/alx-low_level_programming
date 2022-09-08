@@ -6,15 +6,16 @@
  *
  * _putchar - puts character string
  *
- * Return - 1 for success 0 otherwise
+ * Return: 1 for success 0 otherwise
  */
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
-		return (1);
+		c = 1;
 	} else
 	{
-		return (0);
+		c = 0;
 	}
+	return (c);
 }
