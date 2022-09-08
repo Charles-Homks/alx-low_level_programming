@@ -2,8 +2,8 @@
 
 /**
  * print_sign - function that prints the sign of a number
- *
  * _putchar - puts character string
+ * @n: integer return variable
  *
  * Return: 1 for positive, 0 for zero
  * and -1 for otherwise.
