@@ -11,7 +11,7 @@ int main(void)
 	long z;
 
 	printf("%d, %d", x, y);
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 49; i++)
 	{
 		z = x + y;
 		printf(", %ld", z);
