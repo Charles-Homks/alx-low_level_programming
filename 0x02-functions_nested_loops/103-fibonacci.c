@@ -7,17 +7,24 @@
  */
 int main(void)
 {
-	int x = 1, y = 2, i;
-	long z;
+	long int x = 1, y = 2, i, z;
+	long int max = 4000000;
+	long int sum = y;
 
-	printf("%d, %d", x, y);
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 49; i++)
 	{
 		z = x + y;
-		printf(", %ld", z);
 		x = y;
 		y = z;
+		if (y < max)
+		{
+			if (y % 2 == 0)
+			{
+				sum += y;
+			}
+		}
 	}
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
