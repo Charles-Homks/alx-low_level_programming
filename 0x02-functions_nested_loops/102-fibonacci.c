@@ -7,10 +7,9 @@
  */
 int main(void)
 {
-	int x = 1, y = 2, i;
-	long z;
+	long int x = 1, y = 2, i, z;
 
-	printf("%d, %d", x, y);
+	printf("%ld, %ld", x, y);
 	for (i = 1; i < 49; i++)
 	{
 		z = x + y;
