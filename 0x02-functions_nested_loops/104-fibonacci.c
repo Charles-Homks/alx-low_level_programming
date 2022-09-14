@@ -10,7 +10,7 @@ int main(void)
 	long int x = 1, y = 2, i, z;
 
 	printf("%ld, %ld", x, y);
-	for (i = 1; i < 49; i++)
+	for (i = 2; i < 98; i++)
 	{
 		z = x + y;
 		printf(", %ld", z);
