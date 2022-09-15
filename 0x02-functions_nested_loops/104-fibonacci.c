@@ -10,7 +10,7 @@ int main(void)
 	unsigned long int x = 1, y = 2, i, z;
 
 	printf("%lu, %lu", x, y);
-	for (i = 3; i < 98; i++)
+	for (i = 2; i < 98; i++)
 	{
 		z = x + y;
 		printf(", %lu", z);
