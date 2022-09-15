@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_square - function pints diagonals instead of numbers
+ * print_square - function prints square of length size
  * @size: integer variable for length of square
  *
  * Return: void.
