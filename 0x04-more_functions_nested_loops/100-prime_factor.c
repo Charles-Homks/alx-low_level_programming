@@ -10,7 +10,7 @@ int main(void)
 	long int m = 612852475143;
 	long int n, value;
 
-	for (n = 2; n < (m / n); n++)
+	for (n = 2; n <= m; n++)
 	{
 		if (m % n == 0)
 		{
