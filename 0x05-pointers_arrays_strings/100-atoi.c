@@ -12,8 +12,7 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int num = 0;
 
-	do
-	{
+	do {
 		if (*s >= '0' && *s <= '9')
 			num = num * 10 + (*s - 48);
 		else if (*s == '-')
