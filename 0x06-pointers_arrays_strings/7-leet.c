@@ -9,36 +9,26 @@
 char *leet(char *leet)
 {
 	int i = 0;
-	char a1 = 'a', a2 = 'A';
-	char e1 = 'e', e2 = 'E';
-	char o1 = 'o', o2 = 'O';
-	char t1 = 't', t2 = 'T';
-	char l1 = 'l', l2 = 'L';
 
 	while (leet[i])
 	{
-		if (leet[i] == a1 ||
-			leet[i] == a2 ||
-			leet[i] == e1 ||
-			leet[i] == e2 ||
-			leet[i] == o1 ||
-			leet[i] == o2 ||
-			leet[i] == t1 ||
-			leet[i] == t2 ||
-			leet[i] == l1 ||
-			leet[i] == l2)
+		if (leet[i] == 'a' || leet[i] == 'A')
 		{
-			a1 = '4';
-			a2 = '4';
-			e1 = '3';
-			e2 = '3';
-			o1 = '0';
-			o2 = '0';
-			t1 = '7';
-			t2 = '7';
-			l1 = '1';
-			l2 = '1';
+			leet[i] = '4';
+		} else if (leet[i] == 'e' || leet[i] == 'E')
+		{
+			leet[i] = '3';
+		} else if (leet[i] == 'o' || leet[i] == 'O')
+		{
+			leet[i] = '0';
+		} else if (leet[i] == 't' || leet[i] == 'T')
+		{
+			leet[i] = '7';
+		} else if (leet[i] == 'l' || leet[i] == 'L')
+		{
+			leet[i] = '1';
 		}
+		i++;
 	}
 	return (leet);
 }
