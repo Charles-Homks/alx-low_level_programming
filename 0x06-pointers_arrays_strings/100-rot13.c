@@ -16,8 +16,7 @@ char *rot13(char *rot13)
 			(rot13[i] >= 'a' && rot13[i] <= 'm'))
 		{
 			rot13[i] += 13;
-		}
-		else if ((rot13[i] >= 'N' && rot13[i] <= 'Z') ||
+		} else if ((rot13[i] >= 'N' && rot13[i] <= 'Z') ||
 			(rot13[i] >= 'a' && rot13[i] <= 'z'))
 		{
 			rot13[i] -= 13;
