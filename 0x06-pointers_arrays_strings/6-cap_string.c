@@ -17,7 +17,6 @@ char *cap_string(char *str)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] -= 32;
-			continue;
 
 		} else if (str[i - 1] == ' ' ||
 				str[i - 1] == '\t' ||
@@ -35,14 +34,15 @@ char *cap_string(char *str)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] -= 32;
-			continue;
-
-		} else
-		{
-			if (str[i] >= 'A' && str[i] <= 'Z')
-				str[i] += 32;
 		}
-	}
+	}	
+/**
+ * else
+ * {
+ * if (str[i] >= 'A' && str[i] <= 'Z')
+ * str[i] += 32;
+ * }
+ */
 
 	return (str);
 }
