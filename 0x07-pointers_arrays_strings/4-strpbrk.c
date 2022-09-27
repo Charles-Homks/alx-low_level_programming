@@ -5,7 +5,7 @@
  * @s: main String to be search.
  * @accept: Substring for search bytes.
  *
- * Return: a pointer to the byte in s 
+ * Return: a pointer to the byte in s
  * that matches one of the bytes in accept.
  */
 char *_strpbrk(char *s, char *accept)
