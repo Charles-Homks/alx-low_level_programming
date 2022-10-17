@@ -8,8 +8,7 @@
  */
 int main(void)
 {
-	int a, b;
-	int y, z;
+	int a, b, y, z;
 
 	for (a = '0'; a <= '9'; a++)
 	{
@@ -19,9 +18,7 @@ int main(void)
 			{
 				for (z = '0'; z <= '9'; z++)
 				{
-				if (a != y || b != z)
-				{
-				if (y > b || z > a)
+				if (((y + z) > (a + b) &&  y >= a) || a < y)
 				{
 					putchar(a);
 					putchar(b);
@@ -33,7 +30,6 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 					}
-				}
 				}
 				}
 			}
